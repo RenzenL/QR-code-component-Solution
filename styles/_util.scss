@@ -1,0 +1,18 @@
+
+//colors
+$White:hsl(0, 0%, 100%);
+$Lightgray : hsl(212, 45%, 89%);
+$Grayishblue: hsl(220, 15%, 55%);
+$Darkblue: hsl(218, 44%, 22%);
+
+
+@mixin flexIt ($direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction ;
+}
+@mixin widthComponent (){
+    width: 90%;
+    @include flexIt(column);
+}
